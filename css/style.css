@@ -78,7 +78,7 @@ body {
   margin: 0 auto;
 }
 
-.section-title {
+.section-offset__title {
   margin: 0;
   margin-bottom: 40px;
   font-weight: 300;
@@ -87,7 +87,7 @@ body {
   color: #1c1c1c;
 }
 
-.section-description {
+.section-offset__description {
   margin: 0;
   margin-bottom: 50px;
   font-size: 16px;
@@ -151,24 +151,24 @@ body {
   background-color: #fff;
 }
 
-.header-container {
+.header__container {
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   margin-right: auto;
 }
 
-.header-nav {
+.header__nav {
   margin-right: 52px;
 }
 
-.header-list-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 52px;
 
 }
 
-.header-link {
+.nav__link {
   position: relative;
   font-weight: 600;
   font-size: 15px;
@@ -177,16 +177,16 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.header-link:focus {
+.nav__link:focus {
   outline-offset: 3px;
   outline: 1px solid #71a7e2;
 }
 
-.header-link:hover {
+.nav__link:hover {
   color: #71a7e2;
 }
 
-.header-link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -198,12 +198,12 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.header-link:active {
+.nav__link:active {
   color: #3172b9;
   outline: none;
 }
 
-.header-link:active:after {
+.nav__link:active:after {
   opacity: 1;
 }
 
@@ -217,13 +217,13 @@ body {
   background-position: center;
 }
 
-.hero-content {
+.hero__content {
   max-width: 50%;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.hero-title {
+.hero__title {
   margin: 0;
   margin-bottom: 26px;
   font-weight: 300;
@@ -232,7 +232,7 @@ body {
   color: #1c1c1c;
 }
 
-.hero-descr {
+.hero__descr {
   margin: 0;
   margin-bottom: 34px;
   font-weight: 400;
@@ -241,18 +241,18 @@ body {
   color: #787878;
 }
 
-.hero-btn {
+.hero__wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__btn {
   min-width: 250px;
   margin-bottom: 14px;
   padding: 20px 58px;
 }
 
-.hero-wrapper {
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-secure {
+.hero__secure {
   padding-left: 27px;
   font-weight: 400;
   font-size: 11px;
@@ -270,16 +270,16 @@ body {
   border-bottom: 1px solid #DADADA;
 }
 
-.services-title {
+.services__title {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.services-descr {
+.services__descr {
   text-align: center;
 }
 
-.services-item {
+.services__item {
   flex-direction: column;
   align-items: center;
   padding: 60px 30px;
@@ -289,26 +289,26 @@ body {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.services-item:not(:nth-child(4n)) {
+.services__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.services-item:hover {
+.services__item:hover {
   border-color: #3172b9;
   background-color: #3172b9;
 }
 
-.services-item-icon {
+.services__icon {
   margin-bottom: 28px;
   fill: #3172b9;
   transition: fill 0.3s ease-in-out;
 }
 
-.services-item:hover .services-item-icon {
+.services__item:hover .services__icon {
   fill: #fff;
 }
 
-.services-item-title {
+.services__item-title {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 600;
@@ -317,11 +317,11 @@ body {
   color: #1c1c1c;
 }
 
-.services-item:hover .services-item-title {
+.services__item:hover .services__item-title {
   color: #fff;
 }
 
-.services-item-desc {
+.services__item-desc {
   margin: 0;
   text-align: center;
   font-weight: 400;
@@ -331,7 +331,7 @@ body {
   transition: color 0.3s ease-in-outs;
 }
 
-.services-item:hover .services-item-desc {
+.services__item:hover .services__item-desc {
   color: #fff;
 }
 
@@ -773,11 +773,11 @@ body {
   color: #787878;
 }
 
-.footer-nav {
+.footer__nav {
   margin-right: 56px;
 }
 
-.footer-link {
+.nav__link {
   position: relative;
   font-weight: 600;
   font-size: 15px;
@@ -787,16 +787,16 @@ body {
 }
 
 
-.footer-link:focus {
+.nav__link:focus {
   outline-offset: 2px;
   outline: 1px solid #71a7e2;
 }
 
-.footer-link:hover {
+.nav__link:hover {
   color: #71a7e2;
 }
 
-.footer-link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -808,12 +808,12 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.footer-link:active {
+.nav__link:active {
   color: #3172b9;
   outline: none;
 }
 
-.footer-link:active:after {
+.nav__link:active:after {
   opacity: 1;
 }
 
